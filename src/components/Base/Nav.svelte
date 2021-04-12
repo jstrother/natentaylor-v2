@@ -1,16 +1,30 @@
+<script>
+  // import MenuList from './MenuList.svelte';
+  import { showMenu } from '../../stores/toggle';
+
+  function menuToggle() {
+    showMenu.set(!($showMenu));
+  }
+</script>
+
 <style>
-  .menuToggle {
-    @apply flex flex-row flex-nowrap text-gray-500 justify-items-center items-center mt-1;
+  nav {
+    @apply flex flex-row flex-nowrap text-gray-500 justify-items-center items-center mt-1 cursor-pointer;
   }
   p {
     @apply pr-1;
   }
 </style>
 
-<nav>
-  <div class="menuToggle">
-    <p>Menu</p>
-    <i class="fas fa-arrow-alt-circle-down"></i>
-    <i class="fas fa-arrow-alt-circle-up"></i>
-  </div>
+<nav on:click={() => menuToggle()}>
+  <p>Menu</p>
+  {#if !($showMenu)}
+  <i class="fas fa-arrow-alt-circle-down"></i>
+  {:else}
+  <i class="fas fa-arrow-alt-circle-up"></i>
+  {/if}
 </nav>
+
+<!-- {#if $showMenu}
+<MenuList />
+{/if} -->
