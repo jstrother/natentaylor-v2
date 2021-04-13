@@ -1,8 +1,8 @@
 <script>
   import { section } from '../../stores/section';
+  import { imagesList } from '../../stores/imagesList';
 
-  const fullSizePath = `/img/${section.path}/full/`;
-  const thumbPath = `/img/${section.path}/thumb/`;
+  console.log('imagesList:', $imagesList);
 </script>
 
 <style>
@@ -12,5 +12,12 @@
 </style>
 
 <main>
+  <br />
   <h1>{$section.name}</h1>
+  <br />
+  {#each $imagesList as imagesGroup, key}
+    {#if $section.path === imagesGroup.title}
+      <p>{imagesGroup.title}</p>
+    {/if}
+  {/each}
 </main>

@@ -10,7 +10,7 @@
 
 <style>
   ul {
-    @apply flex flex-col flex-nowrap justify-items-center items-center border border-gray-500 rounded-lg mx-3 xs:m-auto absolute z-20 max-w-xs bg-gray-200;
+    @apply flex flex-col flex-nowrap justify-items-center items-center border border-gray-500 rounded-lg mx-3 xs:m-auto absolute z-20 max-w-xs bg-gray-200 shadow-lg;
     top: 17rem;
   }
   li {
