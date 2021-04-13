@@ -6,6 +6,7 @@
   export let thumb;
   export let full;
   export let groupTitle;
+  export let index;
 
   const src = `/img/${groupTitle}/thumb/${thumb}`;
 
@@ -18,6 +19,12 @@
     })
   }
 </script>
+
+<style>
+  img {
+    @apply m-4 border border-gray-200 rounded-lg shadow-lg;
+  }
+</style>
 
 {#if !($showFullSize)}
   <img {src} alt="{name}" title="{name}" on:click="{() => fullSizeToggle()}" />

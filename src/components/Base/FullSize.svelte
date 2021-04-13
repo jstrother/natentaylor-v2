@@ -14,5 +14,9 @@
   }
 </script>
 
+<style>
+  
+</style>
+
 <span on:click="{() => fullSizeToggle()}">X</span>
 <img {src} alt="{$fullSizeInfo.name}" title="{$fullSizeInfo.name}" />
