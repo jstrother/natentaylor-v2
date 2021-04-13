@@ -1,6 +1,6 @@
 <style>
   footer {
-    @apply absolute bottom-0 flex flex-col flex-nowrap m-auto py-4 px-2 justify-items-center items-center text-gray-500 w-full;
+    @apply flex flex-col flex-nowrap m-auto py-4 px-2 justify-items-center items-center text-gray-500 w-full;
   }
   .nateDiv,
   .jimDiv {

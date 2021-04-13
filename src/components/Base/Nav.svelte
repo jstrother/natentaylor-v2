@@ -24,7 +24,3 @@
   <i class="fas fa-arrow-alt-circle-up"></i>
   {/if}
 </nav>
-
-<!-- {#if $showMenu}
-<MenuList />
-{/if} -->
