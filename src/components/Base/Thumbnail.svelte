@@ -22,7 +22,7 @@
 
 <style>
   img {
-    @apply m-4 border border-gray-200 rounded-lg shadow-lg;
+    @apply m-6 border border-gray-300 rounded-md shadow-xl;
   }
 </style>
 

@@ -1,21 +1,21 @@
 <script>
   import Thumbnail from '../Base/Thumbnail.svelte';
   import FullSize from '../Base/FullSize.svelte';
+  import SubGroupDisplay from '../Base/SubGroupDisplay.svelte';
   import { section } from '../../stores/section';
   import { imagesList } from '../../stores/images';
   import { showFullSize } from '../../stores/toggle';
 </script>
 
 <style>
-  * {
-    border: 1px solid red;
-  }
   main {
-    @apply flex flex-col flex-nowrap z-10 max-w-3xl min-h-full;
+    @apply flex flex-col flex-nowrap z-10 max-w-5xl min-h-full;
   }
-  .thumbDisplay,
-  .subThumbDisplay {
-    @apply flex flex-row flex-wrap justify-items-center items-center;
+  h1 {
+    @apply self-center text-4xl text-gray-500;
+  }
+  .thumbDisplay {
+    @apply flex flex-row flex-wrap place-content-evenly;
   }
   .subGroupDisplay {
     @apply flex flex-col flex-nowrap;
@@ -28,40 +28,37 @@
 <main>
   <br />
   {#if !($showFullSize)}
-  <h1>{$section.name}</h1>
+    <h1>{$section.name}</h1>
   {/if}
   <br />
   <div class="thumbDisplay">
     {#each $imagesList as imagesGroup}
     <!-- this each block breaks the entire list into sections -->
       {#if $section.path === imagesGroup.title}
-      <!-- this if block looks for the correct section -->
+      <!-- this if block looks for the correct section (does not have else block) -->
         {#if imagesGroup.images[0].sectionName}
-        <!-- this if block checks to see if there are subGroups -->
+        <!-- this if block checks to see if there are subGroups (has else block #1) -->
           <div class="subGroupDisplay">
             {#each imagesGroup.images as imagesSub}
             <!-- this each block breaks each subGroup into individual groups -->
-            {#if !($showFullSize)}
-              <h3>{imagesSub.sectionName}</h3>
-              {/if}
-              <div class="subThumbDisplay">              
-                {#each imagesSub.sectionImages as image, index}
-                <!-- this each block finally displays images -->
-                  <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
-                {/each}
-              </div>
+              <SubGroupDisplay
+                sectionName="{imagesSub.sectionName}"
+                sectionImages="{imagesSub.sectionImages}"
+                groupTitle="{imagesGroup.title}"
+              />
             {/each}
           </div>
         {:else}
-        <!-- no subGroups? then we just display the images -->
+        <!-- no subGroups? then we just display the images (else block #1) -->
           {#each imagesGroup.images as image, index}
           <!-- this each block finally displays images -->
           {#if imagesGroup.title === 'holiday'}
-          <!-- the holiday art needs a little extra margin at the bottom as it is a smaller group than the others -->
+          <!-- the holiday art needs a little extra margin at the bottom as it is a smaller group than the others (has else block #2) -->
             <div class="holiday">
               <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
             </div>
           {:else}
+          <!-- else block #2 -->
             <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
           {/if}            
           {/each}

@@ -15,8 +15,21 @@
 </script>
 
 <style>
-  
+  div {
+    @apply flex flex-col flex-nowrap;
+  }
+  p {
+    @apply text-right text-lg text-gray-500 p-2;
+  }
+  span {
+    @apply cursor-pointer;
+  }
+  img {
+    @apply border border-gray-300 shadow-xl rounded;
+  }
 </style>
 
-<span on:click="{() => fullSizeToggle()}">X</span>
-<img {src} alt="{$fullSizeInfo.name}" title="{$fullSizeInfo.name}" />
+<div>
+  <p on:click="{() => fullSizeToggle()}"><span>X</span></p>
+  <img {src} alt="{$fullSizeInfo.name}" title="{$fullSizeInfo.name}" />
+</div>
