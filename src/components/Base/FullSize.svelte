@@ -1,6 +1,8 @@
 <script>
   import { showFullSize } from '../../stores/toggle';
   import { fullSizeInfo } from '../../stores/images';
+  import { fly } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
 
   const src = `/img/${$fullSizeInfo.groupTitle}/full/${$fullSizeInfo.full}`;
 
@@ -29,7 +31,10 @@
   }
 </style>
 
-<div>
+<div
+  in:fly="{{ duration: 1800, delay: 1500, x: -200, easing: quintOut }}"
+  out:fly="{{ duration: 800, y: 200, easing: quintOut }}"
+>
   <p on:click="{() => fullSizeToggle()}"><span>X</span></p>
   <img {src} alt="{$fullSizeInfo.name}" title="{$fullSizeInfo.name}" />
 </div>

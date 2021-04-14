@@ -12,16 +12,13 @@
     @apply flex flex-col flex-nowrap z-10 max-w-5xl min-h-full;
   }
   h1 {
-    @apply self-center text-4xl text-gray-500;
+    @apply self-center text-2xl md:text-4xl text-center text-gray-500;
   }
-  .thumbDisplay {
+  .imageDisplay {
     @apply flex flex-row flex-wrap place-content-evenly;
   }
   .subGroupDisplay {
     @apply flex flex-col flex-nowrap;
-  }
-  .holiday {
-    @apply mb-14;
   }
 </style>
 
@@ -31,7 +28,7 @@
     <h1>{$section.name}</h1>
   {/if}
   <br />
-  <div class="thumbDisplay">
+  <div class="imageDisplay">
     {#each $imagesList as imagesGroup}
     <!-- this each block breaks the entire list into sections -->
       {#if $section.path === imagesGroup.title}
@@ -52,23 +49,14 @@
         <!-- no subGroups? then we just display the images (else block #1) -->
           {#each imagesGroup.images as image, index}
           <!-- this each block finally displays images -->
-          {#if imagesGroup.title === 'holiday'}
-          <!-- the holiday art needs a little extra margin at the bottom as it is a smaller group than the others (has else block #2) -->
-            <div class="holiday">
-              <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
-            </div>
-          {:else}
-          <!-- else block #2 -->
             <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
-          {/if}            
           {/each}
         {/if}
       {/if}
     {/each}
+    {#if $showFullSize}
+      <FullSize />
+    {/if}
   </div>
-
-  {#if $showFullSize}
-  <FullSize />
-  {/if}
   <br />
 </main>
