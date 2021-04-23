@@ -6,23 +6,23 @@ export const games = {
       sectionImages: [
         {
           name: 'Binding Contract',
-          full: 'bindingContract.jpeg',
-          thumb: 'bindingContract-thumb.jpeg'
+          full: 'bindingContract.jpg',
+          thumb: 'bindingContract-thumb.jpg'
         },
         {
           name: 'Crooked Dealer',
-          full: 'crookedDealer.jpeg',
-          thumb: 'crookedDealer-thumb.jpeg'
+          full: 'crookedDealer.jpg',
+          thumb: 'crookedDealer-thumb.jpg'
         },
         {
           name: 'Health Inspector',
-          full: 'healthInspector.jpeg',
-          thumb: 'healthInspector-thumb.jpeg'
+          full: 'healthInspector.jpg',
+          thumb: 'healthInspector-thumb.jpg'
         },
         {
           name: "New Year's Party",
-          full: 'newYearsParty.jpeg',
-          thumb: 'newYearsParty-thumb.jpeg'
+          full: 'newYearsParty.jpg',
+          thumb: 'newYearsParty-thumb.jpg'
         }
       ]
     },
@@ -31,23 +31,23 @@ export const games = {
       sectionImages: [
         {
           name: 'Jocasta Pierce-Wilson',
-          full: 'jocastaPW.jpeg',
-          thumb: 'jocastaPW-thumb.jpeg'
+          full: 'jocastaPW.jpg',
+          thumb: 'jocastaPW-thumb.jpg'
         },
         {
           name: '"Thick" Tony DeLuca',
-          full: 'thickTony.jpeg',
-          thumb: 'thickTony-thumb.jpeg'
+          full: 'thickTony.jpg',
+          thumb: 'thickTony-thumb.jpg'
         },
         {
           name: 'Tonya Love',
-          full: 'tonyaLove.jpeg',
-          thumb: 'tonyaLove-thumb.jpeg'
+          full: 'tonyaLove.jpg',
+          thumb: 'tonyaLove-thumb.jpg'
         },
         {
           name: 'Wallace Waiver',
-          full: 'wallaceWaiver.jpeg',
-          thumb: 'wallaceWaiver-thumb.jpeg'
+          full: 'wallaceWaiver.jpg',
+          thumb: 'wallaceWaiver-thumb.jpg'
         }
       ]
     },

@@ -7,7 +7,7 @@
     @apply flex flex-col flex-nowrap justify-items-center items-center content-center m-auto;
   }
   img {
-    @apply border border-black;
+    @apply border border-black rounded-b-md;
   }
 </style>
 

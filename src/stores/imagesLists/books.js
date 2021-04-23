@@ -36,13 +36,13 @@ export const books = {
       sectionImages: [
         {
           name: 'Tak Companion Book',
-          full: 'takCompanion.jpeg',
-          thumb: 'takCompanion-thumb.jpeg'
+          full: 'takCompanion.jpg',
+          thumb: 'takCompanion-thumb.jpg'
         },
         {
           name: "The Red Queen's War",
-          full: 'redQueensWar.jpeg',
-          thumb: 'redQueensWar-thumb.jpeg'
+          full: 'redQueensWar.jpg',
+          thumb: 'redQueensWar-thumb.jpg'
         },
         {
           name: 'The Mallet of Loving Correction',

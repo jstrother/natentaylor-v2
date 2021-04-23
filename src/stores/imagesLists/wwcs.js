@@ -3,13 +3,13 @@ export const wwcs = {
   images: [
     {
       name: 'Into the Unknown',
-      full: 'intoTheUnknown.jpeg',
-      thumb: 'intoTheUnknown-thumb.jpeg'
+      full: 'intoTheUnknown.jpg',
+      thumb: 'intoTheUnknown-thumb.jpg'
     },
     {
       name: 'Tea Party',
-      full: 'teaParty.jpeg',
-      thumb: 'teaParty-thumb.jpeg'
+      full: 'teaParty.jpg',
+      thumb: 'teaParty-thumb.jpg'
     },
     {
       name: 'Hook & Vader',

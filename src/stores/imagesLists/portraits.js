@@ -3,63 +3,53 @@ export const portraits = {
   images: [
     {
       name: 'Emelia Clarke Skydiving',
-      full: 'emeliaClarke_skydiving.jpeg',
-      thumb: 'emeliaClarke_skydiving-thumb.jpeg'
+      full: 'emeliaClarke_skydiving.jpg',
+      thumb: 'emeliaClarke_skydiving-thumb.jpg'
     },
     {
       name: 'Chadwick Boseman',
-      full: 'chadwickBoseman.jpeg',
-      thumb: 'chadwickBoseman-thumb.jpeg'
+      full: 'chadwickBoseman.jpg',
+      thumb: 'chadwickBoseman-thumb.jpg'
     },
     {
       name: 'Alan Rickman',
-      full: 'alanRickman.jpeg',
-      thumb: 'alanRickman-thumb.jpeg'
+      full: 'alanRickman.jpg',
+      thumb: 'alanRickman-thumb.jpg'
     },
     {
       name: 'Terry Brooks',
-      full: 'terryBrooks.jpeg',
-      thumb: 'terryBrooks-thumb.jpeg'
+      full: 'terryBrooks.jpg',
+      thumb: 'terryBrooks-thumb.jpg'
     },
     {
       name: 'Kirk Douglas',
-      full: 'kirkDouglas.jpeg',
-      thumb: 'kirkDouglas-thumb.jpeg'
+      full: 'kirkDouglas.jpg',
+      thumb: 'kirkDouglas-thumb.jpg'
     },
     {
       name: 'Rutger Hauer',
-      full: 'rutgerHauer.jpeg',
-      thumb: 'rutgerHauer-thumb.jpeg'
+      full: 'rutgerHauer.jpg',
+      thumb: 'rutgerHauer-thumb.jpg'
     },
     {
       name: 'Max von Sydow',
-      full: 'maxVonSydow.jpeg',
-      thumb: 'maxVonSydow-thumb.jpeg'
+      full: 'maxVonSydow.jpg',
+      thumb: 'maxVonSydow-thumb.jpg'
     },
     {
       name: 'Gal Gadot',
-      full: 'galGadot.jpeg',
-      thumb: 'galGadot-thumb.jpeg'
+      full: 'galGadot.jpg',
+      thumb: 'galGadot-thumb.jpg'
     },
     {
       name: 'Danny Devito',
-      full: 'dannyDevito.jpeg',
-      thumb: 'dannyDevito-thumb.jpeg'
+      full: 'dannyDevito.jpg',
+      thumb: 'dannyDevito-thumb.jpg'
     },
     {
       name: 'Howard Family',
       full: 'daveHoward_allkids-small-1.jpg',
       thumb: 'daveHoward_allkids-small-1-thumb.jpg'
-    },
-    {
-      name: 'Bratcher Bookplate',
-      full: 'bratcher_bookplate-1.jpg',
-      thumb: 'bratcher_bookplate-1-thumb.jpg'
-    },
-    {
-      name: 'Rey Zuetrong',
-      full: 'reyZuetrong-1.jpg',
-      thumb: 'reyZuetrong-1-thumb.jpg'
     }
   ]
 };

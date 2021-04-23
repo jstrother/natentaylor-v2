@@ -3,38 +3,38 @@ export const characterDesign = {
   images: [
     {
       name: 'Sea Witch',
-      full: 'seaWitch.jpeg',
-      thumb: 'seaWitch-thumb.jpeg'
+      full: 'seaWitch.jpg',
+      thumb: 'seaWitch-thumb.jpg'
     },
     {
       name: 'Think Green',
-      full: 'thinkGreen.jpeg',
-      thumb: 'thinkGreen-thumb.jpeg'
+      full: 'thinkGreen.jpg',
+      thumb: 'thinkGreen-thumb.jpg'
     },
     {
       name: 'CDC Aviator',
-      full: 'CDC_Aviator.jpeg',
-      thumb: 'CDC_Aviator-thumb.jpeg'
+      full: 'CDC_Aviator.jpg',
+      thumb: 'CDC_Aviator-thumb.jpg'
     },
     {
       name: 'Coffee Critter Triptych',
-      full: 'coffeeCritterTriptych.jpeg',
-      thumb: 'coffeeCritterTriptych-thumb.jpeg'
+      full: 'coffeeCritterTriptych.jpg',
+      thumb: 'coffeeCritterTriptych-thumb.jpg'
     },
     {
       name: 'Skeletal Wiz',
-      full: 'skeletalWiz.jpeg',
-      thumb: 'skeletalWiz-thumb.jpeg'
+      full: 'skeletalWiz.jpg',
+      thumb: 'skeletalWiz-thumb.jpg'
     },
     {
       name: 'Winter Warrior',
-      full: 'winterWarrior.jpeg',
-      thumb: 'winterWarrior-thumb.jpeg'
+      full: 'winterWarrior.jpg',
+      thumb: 'winterWarrior-thumb.jpg'
     },
     {
       name: 'Wrex 2',
-      full: 'wrex2.jpeg',
-      thumb: 'wrex2-thumb.jpeg'
+      full: 'wrex2.jpg',
+      thumb: 'wrex2-thumb.jpg'
     },
     {
       name: 'Animal Girl',
@@ -48,8 +48,8 @@ export const characterDesign = {
     },
     {
       name: 'D-n-D Lineup',
-      full: 'DnDlineup.jpeg',
-      thumb: 'DnDlineup-thumb.jpeg'
+      full: 'DnDlineup.jpg',
+      thumb: 'DnDlineup-thumb.jpg'
     },
     {
       name: 'Woodstock-Cloud',

@@ -3,33 +3,33 @@ export const illustration = {
   images: [
     {
       name: 'Simple Withdrawal',
-      full: 'simpleWithdrawal.jpeg',
-      thumb: 'simpleWithdrawal-thumb.jpeg'
+      full: 'simpleWithdrawal.jpg',
+      thumb: 'simpleWithdrawal-thumb.jpg'
     },
     {
       name: 'Autumn Walk',
-      full: 'autumnWalk.jpeg',
-      thumb: 'autumnWalk-thumb.jpeg'
+      full: 'autumnWalk.jpg',
+      thumb: 'autumnWalk-thumb.jpg'
     },
     {
       name: 'Battle of Wits',
-      full: 'battleOfWits.jpeg',
-      thumb: 'battleOfWits-thumb.jpeg'
+      full: 'battleOfWits.jpg',
+      thumb: 'battleOfWits-thumb.jpg'
     },
     {
       name: 'Pixie Girl',
-      full: 'pixieGirl.jpeg',
-      thumb: 'pixieGirl-thumb.jpeg'
+      full: 'pixieGirl.jpg',
+      thumb: 'pixieGirl-thumb.jpg'
     },
     {
       name: 'Hunters Return',
-      full: 'huntersReturn.jpeg',
-      thumb: 'huntersReturn-thumb.jpeg'
+      full: 'huntersReturn.jpg',
+      thumb: 'huntersReturn-thumb.jpg'
     },
     {
       name: 'Storybeard',
-      full: 'storybeard.jpeg',
-      thumb: 'storybeard-thumb.jpeg'
+      full: 'storybeard.jpg',
+      thumb: 'storybeard-thumb.jpg'
     },
     {
       name: 'Goblin Determination',
