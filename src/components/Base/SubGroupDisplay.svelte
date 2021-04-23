@@ -1,8 +1,6 @@
 <script>
   import Thumbnail from '../Base/Thumbnail.svelte';
   import { showFullSize } from '../../stores/toggle';
-  import { fade } from 'svelte/transition';
-  import { linear } from 'svelte/easing';
 
   export let sectionName;
   export let sectionImages;
@@ -19,10 +17,7 @@
 </style>
 
 {#if !($showFullSize)}
-  <h3 
-    in:fade={{ delay: 1000, duration: 1000 }}
-    out:fade={{ duration: 200, easing: linear }}
-  >
+  <h3>
     {sectionName}
   </h3>
   <div class="thumbDisplay">              

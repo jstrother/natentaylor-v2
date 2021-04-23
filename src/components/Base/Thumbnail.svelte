@@ -1,8 +1,6 @@
 <script>
   import { showFullSize } from '../../stores/toggle';
   import { fullSizeInfo } from '../../stores/images';
-  import { fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 
   export let name;
   export let thumb;
@@ -34,8 +32,6 @@
     {src} 
     alt="{name}" 
     title="{name}" 
-    on:click="{() => fullSizeToggle()}" 
-    in:fly="{{ duration: 1800, delay: 1500, x: -transitionIn, easing: quintOut }}"
-    out:fly="{{ duration: 800, y: 200, easing: quintOut }}"
+    on:click="{() => fullSizeToggle()}"
   />
 {/if}
