@@ -1,7 +1,7 @@
 {
-  "name": "stts",
+  "name": "natentaylor-v2",
   "version": "1.0.0",
-  "description": "Svelte/Typescript/Tailwind/Snowpack template",
+  "description": "The Art of Nate Taylor",
   "main": "index.js",
   "scripts": {
     "dev": "snowpack dev",
@@ -12,14 +12,7 @@
     "build": "npm test && npm run check && snowpack build",
     "serve": "sirv build --maxage 36000"
   },
-  "keywords": [
-    "svelte",
-    "typescript",
-    "tailwind",
-    "snowpack",
-    "template"
-  ],
-  "author": "Sean Mullen",
+  "author": "Jim Strother",
   "license": "ISC",
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.5.2",
