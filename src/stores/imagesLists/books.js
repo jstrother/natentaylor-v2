@@ -6,12 +6,12 @@ export const books = {
       sectionImages: [
         {
           name: 'Princess and Mr. Whiffle 1',
-          full: 'princess-pg02-copy.jpg',
+          full: 'Princess-cover300dpi.jpg',
           thumb: 'Princess-cover300dpi-thumb.jpg'
         },
         {
           name: 'Princess and Mr. Whiffle 2',
-          full: 'princess2_pg003-copy.jpg',
+          full: 'princess2-cover.jpg',
           thumb: 'princess2-cover-thumb.jpg'
         },
         {

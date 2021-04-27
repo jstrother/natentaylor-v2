@@ -6,10 +6,8 @@
   export let thumb;
   export let full;
   export let groupTitle;
-  export let index;
 
   const src = `/img/${groupTitle}/thumb/${thumb}`;
-  const transitionIn = index > 0 ? index * 2500 : 1500;
 
   function fullSizeToggle() {
     showFullSize.set(!($showFullSize));
@@ -23,7 +21,7 @@
 
 <style>
   img {
-    @apply m-6 border border-gray-300 rounded-md shadow-xl cursor-pointer;
+    @apply m-8 h-40 border border-gray-300 rounded-md shadow-xl cursor-pointer;
   }
 </style>
 

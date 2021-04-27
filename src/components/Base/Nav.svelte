@@ -1,5 +1,4 @@
 <script>
-  // import MenuList from './MenuList.svelte';
   import { showMenu } from '../../stores/toggle';
 
   function menuToggle() {

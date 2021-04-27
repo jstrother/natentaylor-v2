@@ -18,7 +18,7 @@
     @apply flex flex-row flex-wrap place-content-evenly;
   }
   .subGroupDisplay {
-    @apply flex flex-col flex-nowrap;
+    @apply flex flex-col flex-nowrap place-content-evenly;
   }
 </style>
 
@@ -47,9 +47,9 @@
           </div>
         {:else}
         <!-- no subGroups? then we just display the images (else block #1) -->
-          {#each imagesGroup.images as image, index}
+          {#each imagesGroup.images as image}
           <!-- this each block finally displays images -->
-            <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" {index} />
+            <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" groupTitle="{imagesGroup.title}" />
           {/each}
         {/if}
       {/if}

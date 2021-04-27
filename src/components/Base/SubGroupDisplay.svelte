@@ -21,8 +21,8 @@
     {sectionName}
   </h3>
   <div class="thumbDisplay">              
-    {#each sectionImages as image, index}
-      <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" {groupTitle} {index} />
+    {#each sectionImages as image}
+      <Thumbnail name="{image.name}" thumb="{image.thumb}" full="{image.full}" {groupTitle} />
     {/each}
   </div>
 {/if}
